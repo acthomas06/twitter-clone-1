@@ -3,17 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
     	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" href="../bootstrap-3.0.3/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
 		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="../bootstrap-3.0.3/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://timeago.yarp.com/jquery.timeago.js"></script>
 	</head>
 	<body>
 		<div id="page-container">
 			<div id="dashboard">
 				<div id="profile-summary">
 					<div class="content">
-						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Andrew Thomas</p>
+						<img class='avatar' src='img/alagoon.jpg' /> 	
+						<strong class="fullname">Andrew Thomas</strong>
+						<span class="username">@ExellionHD</span>
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -47,7 +51,7 @@
 							<img class="avatar" src="img/damenleeturks.jpg" />
 							<strong class="fullname">My BFF</strong>
 							<span class="username">@mybff</span>
-
+							<span><abbr class="time">10m</abbr></span>
 							<!-- BLACK DIAMOND: Implement the icons for when a tweet is favorited/retweeted in the upper right of the tweet. -->
 							<!-- HINT: Add to what you created in Step 5 -->
 							<p class="tweet-text">Today is an amazing day.</p>
@@ -73,7 +77,7 @@
 								<div class="favorites">
 									<p class="num-favorites">6</p>
 									<p>FAVORITES</p>
-								</div>
+									</div>
 								<div class="users-interact">
 									<div>
 
@@ -86,8 +90,10 @@
 
 								<!-- BLACK DIAMOND: Make the timestamp below similar to how they look on Twitter (1h, 18m, 1m) and use the jQuery timeago plugin to make them automatic. -->
 								<!-- HINT: Refer to timeago documentation -->
-								<div class="time">
-									1:04 PM - 19 Sep 13
+								<div>
+									<abbr class="time" title="2013-09-19T1:04">
+										1:04 PM - 19 Sep 13
+									</abbr>
 								</div>
 							</div>
 							<div class="reply">
@@ -126,8 +132,10 @@
 										<img src="img/damenleeturks.jpg" />
 									</div>
 								</div>
-								<div class="time">
-									1:04 PM - 19 Sep 13
+								<div>
+									<abbr class="time" title="2013-09-19T1:04">
+										1:04 PM - 19 Sep 13
+									</abbr>
 								</div>
 							</div>
 							<div class="reply">
@@ -166,8 +174,10 @@
 										<img src="img/funwatercat.jpg" />
 									</div>
 								</div>
-								<div class="time">
-									1:04 PM - 19 Sep 13
+								<div>
+									<abbr class="time" title="2013-09-19T1:04">
+										1:04 PM - 19 Sep 13
+									</abbr>
 								</div>
 							</div>
 							<div class="reply">
